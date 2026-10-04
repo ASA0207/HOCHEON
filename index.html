@@ -26,6 +26,40 @@ section{padding:100px 24px}.kick{color:#7d8884}.title{font:400 clamp(46px,7vw,78
 .music{position:fixed;z-index:80;right:17px;bottom:17px;width:325px;background:#090c0ded;border:1px solid #333a38;backdrop-filter:blur(20px);padding:13px;color:#d9d5c7;opacity:0;transform:translateY(15px);transition:.7s}body.entered .music{opacity:1;transform:none}.mTop{display:flex;align-items:center;gap:10px}.sigil{width:43px;height:43px;border:1px solid #782020;display:grid;place-items:center;font:400 20px "Song Myung";color:#9a2828;animation:spin 10s linear infinite}.music.paused .sigil{animation-play-state:paused}@keyframes spin{to{transform:rotate(360deg)}}.track{min-width:0;flex:1}.track b{display:block;font-size:11px}.track small{display:block;margin-top:3px;font:700 7px "Space Mono";color:#6f7975}.music button{width:33px;height:33px;border:1px solid #343b39;background:#111617;color:#c9c6b9;cursor:pointer}.bar{height:4px;background:#303634;margin:11px 0 8px;cursor:pointer}.fill{height:100%;width:0;background:#8c2424}.mBottom{display:flex;align-items:center;gap:8px}.vol{appearance:none;width:80px;height:3px;background:#3a403e}.vol::-webkit-slider-thumb{appearance:none;width:10px;height:10px;border-radius:50%;background:#9a2929}.mTxt,.time{font:700 7px "Space Mono";color:#747e7a}.time{margin-left:auto}
 footer{text-align:center;padding:28px;background:#07090a;border-top:1px solid #202524;font:700 8px "Space Mono";letter-spacing:.14em;color:#5e6864}
 @media(max-width:780px){.links{display:none}.heroGrid,.timeBox{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.hero h1{font-size:76px}.hero h1 span{margin-left:0}.music{width:calc(100% - 20px);right:10px;bottom:10px}.reaper{width:190px;height:360px}.moon{width:310px}}@media(max-width:520px){.cards{grid-template-columns:1fr}.introCore{top:11%}.introLogo{font-size:82px}}
+
+/* ===== NIGHTMARE QUALITY UPGRADE ===== */
+#intro{background:
+ radial-gradient(ellipse at 50% 118%,#33403d38 0,transparent 38%),
+ radial-gradient(circle at 50% 40%,#242b29 0,#0a0e0f 42%,#010203 88%)}
+#intro:before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:
+ radial-gradient(ellipse at 50% 40%,transparent 0 25%,#0006 60%,#000d 100%),
+ repeating-linear-gradient(90deg,transparent 0 110px,#ffffff06 111px,transparent 112px)}
+.moon{width:min(46vw,510px);filter:contrast(1.08);box-shadow:0 0 30px #fff7d477,0 0 95px #e5dca14d,0 0 220px #a7974930}
+.moon:after{box-shadow:-95px -105px 0 9px #938d7030,55px -120px 0 3px #8e876a28,-70px 75px 0 14px #aaa17d25}
+.reaper{width:min(33vw,370px);height:min(54vw,570px);top:43%;filter:drop-shadow(0 22px 18px #000)}
+.hood{width:47%;height:30%;background:radial-gradient(ellipse at 50% 65%,#000 0 32%,#090b0b 34% 63%,#020303 65%);box-shadow:0 0 25px #000}
+.face{top:13%;width:24%;height:13%;background:#000;box-shadow:-16px 7px 0 -12px #df2929,16px 7px 0 -12px #df2929,0 0 22px #a3131340}
+.cloak{width:87%;background:linear-gradient(90deg,#010202,#121716 42%,#050707 62%,#010202);filter:drop-shadow(0 18px 14px #000)}
+/* Bigger, sharper scythe */
+.scythe{width:8px;height:106%;right:-19%;top:-8%;transform:rotate(8deg);background:linear-gradient(90deg,#0c0e0e,#69716e 42%,#151918 70%);box-shadow:0 0 3px #d9e0dc55,5px 0 12px #000}
+.scythe:before{width:205px;height:105px;right:-14px;top:-14px;border-top:18px solid #d5dad3;border-radius:100% 2% 0 0;transform:rotate(-17deg);filter:drop-shadow(0 0 4px #fff9) drop-shadow(0 0 13px #dfe9e26b)}
+.scythe:after{content:"";position:absolute;width:158px;height:55px;right:9px;top:0;border-top:5px solid #7e8782;border-radius:100% 0 0 0;transform:rotate(-17deg);opacity:.85}
+.f1{height:31%;bottom:-1%;opacity:.9}.f2{height:28%;bottom:16%;opacity:.7}.f3{height:24%;top:4%;opacity:.22}
+.introCore{top:7%}.introLogo{text-shadow:0 4px 25px #000,0 0 38px #d9d1aa25}
+.enter{bottom:6%;box-shadow:0 12px 40px #000}.enter:before{content:"☾";margin-right:10px;color:#9b2929}
+.hero{background:
+ linear-gradient(180deg,transparent 0 65%,#0b1011 100%),
+ radial-gradient(circle at 79% 24%,#d6cda519 0 7%,transparent 20%),
+ radial-gradient(ellipse at 25% 85%,#82928c0c,transparent 35%),#090d0e}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 120px,#ffffff05 121px,transparent 122px);pointer-events:none}
+.label{box-shadow:inset 3px 0 #8f2424}.seal{background:linear-gradient(145deg,#0b0e0f,#050707);box-shadow:18px 18px 0 #030404,0 0 55px #0007}
+.card{background:linear-gradient(145deg,#121718,#0b0f10);box-shadow:0 18px 45px #0002}.card:hover{box-shadow:0 25px 60px #0008,0 0 0 1px #737d7835}
+.deathRow{transition:.25s}.deathRow:hover{background:linear-gradient(90deg,#791d1d1f,transparent);padding-left:18px}.deathRow:hover b{color:#d13b3b}
+.deathlist{background:radial-gradient(circle at 75% 20%,#761b1b10,transparent 20%),#07090a}
+.noticeBox{background:linear-gradient(145deg,#131919,#0c1011);box-shadow:0 20px 70px #0003}
+.final:after{content:"";position:absolute;left:-15%;bottom:-8%;width:130%;height:30%;background:radial-gradient(ellipse,#a8b2ad25,transparent 66%);filter:blur(22px);animation:fog 10s ease-in-out infinite alternate}
+.music{box-shadow:0 22px 70px #0009}.sigil{box-shadow:inset 0 0 18px #7e202033,0 0 15px #7e202022}
+@media(max-width:780px){.reaper{width:230px;height:405px;top:46%}.scythe{right:-13%;height:100%}.scythe:before{width:150px;height:80px;border-top-width:14px}.moon{width:340px}}
 </style></head><body class="lock"><div class="grain"></div><div class="scroll" id="scroll"></div>
 <div id="intro"><div class="moon"></div><div class="reaper"><div class="hood"></div><div class="face"></div><div class="cloak"></div><div class="scythe"></div></div><div class="fog f1"></div><div class="fog f2"></div><div class="fog f3"></div><div class="introCore"><div class="tiny">TALESRUNNER GUILD · ROAD TO THE UNDERWORLD</div><div class="introLogo">호천</div><div class="introSub">달이 뜨고 안개가 걷히면, 호천의 문이 열린다.</div></div><button class="enter" id="enter">저승의 문을 열다</button></div>
 <audio id="bgm" src="changgwi.mp3" preload="auto" loop></audio><div class="music paused" id="music"><div class="mTop"><div class="sigil">魂</div><div class="track"><b>창귀 · CHANGGWI</b><small>HOCHEON NIGHT RADIO · NOW PLAYING</small></div><button id="play">▶</button><button id="mute">♪</button></div><div class="bar" id="bar"><div class="fill" id="fill"></div></div><div class="mBottom"><span class="mTxt" id="vtxt">7%</span><input id="vol" class="vol" type="range" min="0" max="1" step=".01" value=".07"><span class="time" id="time">00:00 / 00:00</span></div></div>
