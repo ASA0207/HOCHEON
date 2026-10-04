@@ -60,11 +60,42 @@ footer{text-align:center;padding:28px;background:#07090a;border-top:1px solid #2
 .final:after{content:"";position:absolute;left:-15%;bottom:-8%;width:130%;height:30%;background:radial-gradient(ellipse,#a8b2ad25,transparent 66%);filter:blur(22px);animation:fog 10s ease-in-out infinite alternate}
 .music{box-shadow:0 22px 70px #0009}.sigil{box-shadow:inset 0 0 18px #7e202033,0 0 15px #7e202022}
 @media(max-width:780px){.reaper{width:230px;height:405px;top:46%}.scythe{right:-13%;height:100%}.scythe:before{width:150px;height:80px;border-top-width:14px}.moon{width:340px}}
+
+/* ===== HERO TYPOGRAPHY FIX ===== */
+.hero h1{
+  width:min(760px,68vw);
+  margin:34px 0 32px;
+  line-height:1;
+}
+.hero h1 .heroTop{
+  display:block;
+  margin:0;
+  color:#e5dfca;
+  -webkit-text-stroke:0;
+  font-size:1em;
+  white-space:nowrap;
+}
+.hero h1 .heroBottom{
+  display:block;
+  margin:12px 0 0 6.5vw;
+  color:transparent;
+  -webkit-text-stroke:1px #777e79;
+  font-size:.58em;
+  line-height:1.08;
+  letter-spacing:-.025em;
+  white-space:nowrap;
+  width:max-content;
+  max-width:72vw;
+}
+@media(max-width:780px){
+  .hero h1{width:100%;font-size:72px}
+  .hero h1 .heroBottom{font-size:.54em;margin:10px 0 0 4vw;white-space:normal;max-width:82vw}
+}
 </style></head><body class="lock"><div class="grain"></div><div class="scroll" id="scroll"></div>
 <div id="intro"><div class="moon"></div><div class="reaper"><div class="hood"></div><div class="face"></div><div class="cloak"></div><div class="scythe"></div></div><div class="fog f1"></div><div class="fog f2"></div><div class="fog f3"></div><div class="introCore"><div class="tiny">TALESRUNNER GUILD · ROAD TO THE UNDERWORLD</div><div class="introLogo">호천</div><div class="introSub">달이 뜨고 안개가 걷히면, 호천의 문이 열린다.</div></div><button class="enter" id="enter">저승의 문을 열다</button></div>
 <audio id="bgm" src="changgwi.mp3" preload="auto" loop></audio><div class="music paused" id="music"><div class="mTop"><div class="sigil">魂</div><div class="track"><b>창귀 · CHANGGWI</b><small>HOCHEON NIGHT RADIO · NOW PLAYING</small></div><button id="play">▶</button><button id="mute">♪</button></div><div class="bar" id="bar"><div class="fill" id="fill"></div></div><div class="mBottom"><span class="mTxt" id="vtxt">7%</span><input id="vol" class="vol" type="range" min="0" max="1" step=".01" value=".07"><span class="time" id="time">00:00 / 00:00</span></div></div>
 <nav><div class="brand">호천 <small>HOCHEON · 黃泉</small></div><div class="links"><a href="#about">INFO</a><a href="#schedule">QUEST</a><a href="#death">LIST</a><a href="#discord">DISCORD</a></div></nav>
-<header class="hero"><div class="wrap"><div class="label"><i></i> HOCHEON · RECRUITING NOW</div><h1>달 아래 모여<span>저승길을 달린다.</span></h1><div class="heroGrid"><p class="lead">안개가 내려앉은 밤, 보름달 아래 함께 달릴 사람을 기다립니다. <b>호천</b>은 초심존 점령전을 중심으로 활동하며, 꾸준히 접속하고 함께 길드 활동을 이어갈 길드원을 모집합니다.</p><div class="seal"><small>GUILD MASTER / PROFILE</small><strong>길드마스터 · 운솜</strong><div class="facts"><span class="fact">홀리 이상</span><span class="fact">23세 이상</span><span class="fact">접률 중상</span><span class="fact">점령전 초심존</span></div></div></div></div></header>
+<header class="hero"><div class="wrap"><div class="label"><i></i> HOCHEON · RECRUITING NOW</div><h1><span class="heroTop">달 아래 모여</span><span class="heroBottom">저승길을 달린다.</span></h1><div class="heroGrid"><p class="lead">안개가 내려앉은 밤, 보름달 아래 함께 달릴 사람을 기다립니다. <b>호천</b>은 초심존 점령전을 중심으로 활동하며, 꾸준히 접속하고 함께 길드 활동을 이어갈 길드원을 모집합니다.</p><div class="seal"><small>GUILD MASTER / PROFILE</small><strong>길드마스터 · 운솜</strong><div class="facts"><span class="fact">홀리 이상</span><span class="fact">23세 이상</span><span class="fact">접률 중상</span><span class="fact">점령전 초심존</span></div></div></div></div></header>
 <div class="ticker"><div>黃泉 · FULL MOON · BEGINNER ZONE · GUILD QUEST 20:00—22:00 · RESPECT · ACTIVITY · 黃泉 · FULL MOON · BEGINNER ZONE · GUILD QUEST 20:00—22:00 · RESPECT · ACTIVITY · </div></div>
 <section class="about" id="about"><div class="wrap reveal"><div class="kick">01 / HOCHEON RECRUITMENT</div><div class="title">호천의 문을<br>두드릴 자.</div><div class="cards"><div class="card" data-n="條件 01"><div class="ico">☾</div><h3>홀리 이상</h3><p>가입 레벨은 홀리윙부츠 이상을 기준으로 합니다.</p></div><div class="card" data-n="條件 02"><div class="ico">廿</div><h3>23세 이상</h3><p>성인 중심으로 함께 오래 활동할 길드원을 기다립니다.</p></div><div class="card" data-n="條件 03"><div class="ico">⚔</div><h3>초심존 점령전</h3><p>호천의 점령전 주 활동 구간은 초심존입니다.</p></div><div class="card" data-n="條件 04"><div class="ico">魂</div><h3>접속률 중상</h3><p>길드 활동과 소통을 꾸준히 함께할 수 있는 분을 선호합니다.</p></div></div></div></section>
 <section class="schedule" id="schedule"><div class="wrap reveal"><div class="kick">02 / GUILD QUEST</div><div class="title">해가 지면,<br>길드퀘스트가 시작된다.</div><div class="timeBox"><div class="clock">20:00<br>—22:00</div><div><h3>매일 저녁, 호천의 시간</h3><p>길드퀘스트는 <b>매일 20:00부터 22:00까지</b> 진행합니다. 길드원들과 함께 활동하며 호흡을 맞추는 시간입니다.</p></div></div></div></section>
